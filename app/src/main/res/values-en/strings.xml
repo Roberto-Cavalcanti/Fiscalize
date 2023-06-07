@@ -1,10 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Fiscalize</string>
     <string name="title_activity_fullscreen">FullscreenActivity</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
-    <string name="btnEntrar">Entrar</string>
-    <string name="hintUser">Usuário</string>
-    <string name="acessar">Iniciar Sessão</string>
-    <string name="hintSenha">Senha</string>
+    <string name="btnEntrar">Login</string>
+    <string name="hintUser">User</string>
+    <string name="acessar">Sign in</string>
+    <string name="hintSenha">Password</string>
 </resources>

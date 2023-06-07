@@ -8,4 +8,18 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
     }
+
+    /*btLogin.setOnClickListener {
+        if(edNome.text.toString()=="Diogo") {
+            val inten = Intent(this, Tela2Activity::class.java)
+            val texto = edNome.text.toString()
+            inten.putExtra("nome", texto)
+            startActivity(inten)
+        }
+        else{
+            Toast.makeText(this, R.string.msgError, Toast.LENGTH_SHORT).show()
+            btLogin.text = edNome.text.toString()
+
+        }
+    }*/
 }
