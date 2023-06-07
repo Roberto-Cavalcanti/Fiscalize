@@ -7,4 +7,5 @@
     <string name="hintUser">Usuário</string>
     <string name="acessar">Iniciar Sessão</string>
     <string name="hintSenha">Senha</string>
+    <string name="msgError">Usuário ou senha incorretos</string>
 </resources>

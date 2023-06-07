@@ -1,25 +1,33 @@
 package com.example.fiscalize
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
+import com.example.fiscalize.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+//        setContentView(R.layout.activity_main)
+
+        val edNome = binding.textInputEditText
+        val btLogin = binding.btLogin
+
+        btLogin.setOnClickListener {
+            if (edNome.text.toString() == "Roberto") {
+                val inten = Intent(this, HomeActivity::class.java)
+                val texto = edNome.text.toString()
+                inten.putExtra("nome", texto)
+                startActivity(inten)
+            } else {
+                Toast.makeText(this, R.string.msgError, Toast.LENGTH_SHORT).show()
+                btLogin.text = edNome.text.toString()
+
+            }
+        }
     }
-
-    /*btLogin.setOnClickListener {
-        if(edNome.text.toString()=="Diogo") {
-            val inten = Intent(this, Tela2Activity::class.java)
-            val texto = edNome.text.toString()
-            inten.putExtra("nome", texto)
-            startActivity(inten)
-        }
-        else{
-            Toast.makeText(this, R.string.msgError, Toast.LENGTH_SHORT).show()
-            btLogin.text = edNome.text.toString()
-
-        }
-    }*/
 }
