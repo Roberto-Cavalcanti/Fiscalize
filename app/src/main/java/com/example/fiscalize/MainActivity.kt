@@ -21,7 +21,8 @@ class MainActivity : AppCompatActivity() {
             if (edNome.text.toString() == "Roberto") {
                 val inten = Intent(this, HomeActivity::class.java)
                 val texto = edNome.text.toString()
-                inten.putExtra("nome", texto)
+                val wellcome = "Bem-vindo de volta, $texto"
+                inten.putExtra("nome", wellcome)
                 startActivity(inten)
             } else {
                 Toast.makeText(this, R.string.msgError, Toast.LENGTH_SHORT).show()

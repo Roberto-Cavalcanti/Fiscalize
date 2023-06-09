@@ -9,4 +9,6 @@
     <string name="hintSenha">Senha</string>
     <string name="msgError">Usuário ou senha incorretos</string>
     <string name="wellcome">Bem-vindo de volta, Usuário</string>
+    <string name="reporte">Reporte</string>
+    <string name="reportar">Reportar</string>
 </resources>
