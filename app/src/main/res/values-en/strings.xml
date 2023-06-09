@@ -10,4 +10,6 @@
     <string name="hintSenha">Password</string>
     <string name="msgError">User or password are incorrect</string>
     <string name="wellcome">Wellcome to back, User</string>
+    <string name="reporte">Reporte</string>
+    <string name="reportar">Reportar</string>
 </resources>
