@@ -8,4 +8,5 @@
     <string name="acessar">Iniciar Sessão</string>
     <string name="hintSenha">Senha</string>
     <string name="msgError">Usuário ou senha incorretos</string>
+    <string name="wellcome">Bem-vindo de volta, Usuário</string>
 </resources>
